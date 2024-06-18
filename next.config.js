@@ -1,15 +1,17 @@
 /** @type {import('next').NextConfig} */
 
+// Example of removing SWC configuration in next.config.js
 const nextConfig = {
   reactStrictMode: false,
-  swcMinify: true,
-  terser: {
-    // Disable Terser optimization
-    terserOptions: {
-      compress: false,
-      mangle: false,
-    },
-  }, // <-- Close the 'terser' object properly
+  // Remove or comment out SWC-related configurations
+  // swcMinify: true,
+  // terser: {
+  //   terserOptions: {
+  //     compress: true,
+  //     mangle: true,
+  //   },
+  // },
 };
 
 module.exports = nextConfig;
+
