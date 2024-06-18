@@ -2,7 +2,14 @@
 
 const nextConfig = {
   reactStrictMode: false,
-  swcMinify: true,
-}
+  swcMinify: false,
+  terser: {
+    // Disable Terser optimization
+    terserOptions: {
+      compress: false,
+      mangle: false,
+    },
+  }, // <-- Close the 'terser' object properly
+};
 
-module.exports = nextConfig
+modules.exports = nextConfig;
